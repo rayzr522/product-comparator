@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./popup.css" />
+</head>
+
+<body>
+  <template id="li_template">
+    <li>
+      <a>
+        <input class="include" type="checkbox" />
+        <label class="title truncate-text">Tab Title</label>
+        <p class="url truncate-text">Tab Url</p>
+      </a>
+    </li>
+  </template>
+
+  <template id="result_template">
+    <tr>
+      <td><img /></td>
+      <td class="title">Result Title</td>
+      <td class="price">Result Price</td>
+    </tr>
+  </template>
+
+  <h1>Product Comparator</h1>
+  <button id="compare_products">Compare Products</button>
+  <button id="select_all">Select All</button>
+  <button id="select_none">Select None</button>
+  <pre id="raw_results"></pre>
+  <ul id="tabs"></ul>
+  <table id="results" border="1">
+    <thead>
+      <tr>
+        <th>Image</th>
+        <th>Title</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="./popup.js" type="module"></script>
+</body>
+
+</html>
